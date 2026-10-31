@@ -13,9 +13,9 @@ export function Hero({ hero }: { hero: SiteContent["hero"] }) {
         <Image src={hero.image.src} alt={hero.image.alt} fill priority sizes="100vw" className="object-cover" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/30 to-ink/60" />
-      <div className="relative px-6">
+      <div className="relative px-6 w-full">
         <motion.h1 initial={reduce ? false : { opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={t(0.3)}
-          className="mx-auto max-w-4xl font-display text-4xl font-medium leading-tight tracking-[0.08em] sm:text-5xl md:text-7xl">{hero.title}</motion.h1>
+          className="mx-auto max-w-4xl break-words font-display text-4xl font-medium leading-tight tracking-[0.08em] sm:text-5xl md:text-7xl">{hero.title}</motion.h1>
         <motion.p initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={t(0.9)}
           className="mt-6 text-base font-normal tracking-[0.25em] text-cream/90 md:text-lg">{hero.subtitle}</motion.p>
         <motion.a href="#dat-lich" initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={t(1.4)}
