@@ -7,6 +7,9 @@ const body = Inter({ subsets: ["latin", "latin-ext", "vietnamese"], variable: "-
 
 export const metadata: Metadata = {
   title: "Lumière Spa | Luxury Beauty Experience",
+  verification: {
+    google: "LVs4bi2EZuiBP_yU6vTIdF4Vmqk_97Z_AAJUOetR9DI",
+  },
   description: "Chăm sóc da, massage trị liệu và thư giãn toàn thân trong không gian sang trọng. Đặt lịch ngay.",
 };
 
